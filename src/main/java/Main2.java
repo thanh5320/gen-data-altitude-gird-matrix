@@ -18,7 +18,7 @@ public class Main2 {
       try (BufferedReader br = new BufferedReader(new FileReader(Constant.FILE_NAME_R))) {
         int k = 0;
 
-        String line;
+        String line = br.readLine();
         while ((line = br.readLine()) != null) {
           String[] split = line.split("\t");
           if(k< Constant.COLUMN-1){
